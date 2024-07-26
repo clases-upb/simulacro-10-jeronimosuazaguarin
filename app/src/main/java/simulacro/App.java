@@ -14,18 +14,18 @@ public class App {
      * y devuelve en entero, los segundos equivalentes. Si hay un error, devuelve -1. 
      *  Adaptado de edabit
      */
-      public static int Convertir_min_sec(int minutos){
-
-    try{
-        int total_segs=0;
-    final byte   segxmin=60;
-     total_segs= minutos*segxmin;
-    return total_segs;
+    public static int Convertir_min_sec(int minutos){
+    
+        try{
+            int total_segs=0;
+        final byte   segxmin=60;
+         total_segs= minutos*segxmin;
+        return total_segs;
+        }
+        catch(Exception e){
+            return -1;
+        }
     }
-    catch(Exception e){
-        return -1;
-    }
-}
 
 
      /*
@@ -54,18 +54,18 @@ public class App {
      * Si hay un error, devuelve 0.
      *  Adaptado de edabit
      */
-     public static float Calcular_potencia(short voltaje ,byte corriente){
- try{
-    float potencia=0;
-    potencia=voltaje*corriente;
-    return potencia;
-
-}
- catch(Exception e){
-    return 0;
- }
-
-}
+    public static float Calcular_potencia(short voltaje ,byte corriente){
+     try{
+        float potencia=0;
+        potencia=voltaje*corriente;
+        return potencia;
+    
+    }
+     catch(Exception e){
+        return 0;
+     }
+    
+    }
 
 
 }
